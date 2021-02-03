@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+    {% for potion in potions %}
+        {{ potion.name }}<br>
+        {{ potion.ingredients }}<br>
+        {{ potion.effect }}<br>
+        {{ potion.toxicity }}<br>
+    {% endfor %}
+
+{% endblock %}

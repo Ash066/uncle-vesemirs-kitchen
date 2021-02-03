@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+    {% for bomb in bombs %}
+        {{ bomb.name }}<br>
+        {{ bomb.ingredients }}<br>
+        {{ bomb.effect }}<br>
+        {{ bomb.charges }}<br>
+    {% endfor %}
+
+{% endblock %}

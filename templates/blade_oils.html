@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+    {% for blade_oil in blade_oils %}
+        {{ blade_oil.name }}<br>
+        {{ blade_oil.ingredients }}<br>
+        {{ blade_oil.effect }}<br>
+        {{ blade_oil.charges }}<br>
+    {% endfor %}
+
+{% endblock %}

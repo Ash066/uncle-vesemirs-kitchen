@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+    {% for decoction in decoctions %}
+        {{ decoction.name }}<br>
+        {{ decoction.ingredients }}<br>
+        {{ decoction.effect }}<br>
+        {{ decoction.duration }}<br>
+    {% endfor %}
+
+{% endblock %}

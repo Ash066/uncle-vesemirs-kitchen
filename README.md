@@ -50,18 +50,17 @@ I may not be as quick as I was when I was a young man of 100, b
 Monster Glossary so that site users have access to more information and a monster they are trying to defeat and what best to use in that situation.
 
 ## Tecnologies Used
-* HTML 5
-* Javascript
-* CSS 3
-* Python
-* jQuery
-* MongoDB
-* All wireframes were created using the [balsamiq](https://balsamiq.com/) wireframes software.
-* [Bootstrap](https://getbootstrap.com/) was utilised along with user created css stylesheets in the design and function of these pages.
-* Javascript elements taken from the [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/javascript/) website.
-* [cdnjs](https://cdnjs.com/) used to insure proper links used.
-* [EmailJS](https://www.emailjs.com/) used for passing information sumbitted via form in music.html to specified email address. 
-* [FreeFormatter](https://www.freeformatter.com/) used for formatting all code.
+* HTML 5
+* Javascript
+* CSS 3
+* Python
+* jQuery
+* MongoDB
+* All wireframes were created using the [balsamiq](https://balsamiq.com/) wireframes software.
+* Navbar and collapsible components taken from [materializecss](https://materializecss.com/).
+* [cdnjs](https://cdnjs.com/) used to insure proper links used.
+* [EmailJS](https://www.emailjs.com/) used for passing information sumbitted via form in music.html to specified email address. 
+* [FreeFormatter](https://www.freeformatter.com/) used for formatting all code.
 
 ## Testing
 
@@ -130,22 +129,22 @@ Cloning process adapted from official [Github](https://docs.github.com/en/f
 
 ### To clone this projects repository using the command line follow these steps:
 
-1. On GitHub, navigate to the [main page of the repository](https://github.com/Ash066/uncle-vesemirs-kitchen).
-2. Above the list of files, click the "Code" dropdown menu.
-3. 
-* To clone the repository using HTTPS, under "Clone with HTTPS", click the clipboard icon.
-* To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the clipboard icon.
-* To clone a repository using GitHub CLI, click Use GitHub CLI, then click the clipboard icon.
-4. Open Git Bash.
-5. Type git clone, and then paste the URL you copied earlier (example : $ git clone https://github.com/Ash066/uncle-vesemirs-kitchen)
-6. Press Enter to create your local clone.
+1. On GitHub, navigate to the [main page of the repository](https://github.com/Ash066/uncle-vesemirs-kitchen).
+2. Above the list of files, click the "Code" dropdown menu.
+3. 
+* To clone the repository using HTTPS, under "Clone with HTTPS", click the clipboard icon.
+* To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the clipboard icon.
+* To clone a repository using GitHub CLI, click Use GitHub CLI, then click the clipboard icon.
+4. Open Git Bash.
+5. Type git clone, and then paste the URL you copied earlier (example : $ git clone https://github.com/Ash066/uncle-vesemirs-kitchen)
+6. Press Enter to create your local clone.
 
 ### To clone this projects repository to GitHub Desktop follow these steps:
 
-1. On GitHub, navigate to the [main page of the repository](https://github.com/Ash066/uncle-vesemirs-kitchen).
-2. Above the list of files, click the "Code" dropdown menu.
-3. Click Open with GitHub Desktop button to clone and open the repository with GitHub Desktop.
-4. Follow the prompts in GitHub Desktop to complete the clone.
+1. On GitHub, navigate to the [main page of the repository](https://github.com/Ash066/uncle-vesemirs-kitchen).
+2. Above the list of files, click the "Code" dropdown menu.
+3. Click Open with GitHub Desktop button to clone and open the repository with GitHub Desktop.
+4. Follow the prompts in GitHub Desktop to complete the clone.
 
 ## Credits
 
