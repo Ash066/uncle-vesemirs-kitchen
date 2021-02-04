@@ -1,11 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for blade_oil in blade_oils %}
-        {{ blade_oil.name }}<br>
+   <ul class="collapsible">
+       {% for blade_oil in blade_oils %}
+    <li>
+      <div class="collapsible-header">{{ blade_oil.name }}</div>
+      <div class="collapsible-body">
         {{ blade_oil.ingredients }}<br>
         {{ blade_oil.effect }}<br>
         {{ blade_oil.charges }}<br>
+      </div>
+    </li>
     {% endfor %}
+  </ul>
 
 {% endblock %}
+
+
+
+
+
+
+

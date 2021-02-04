@@ -1,11 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for potion in potions %}
-        {{ potion.name }}<br>
+   <ul class="collapsible">
+       {% for potion in potions %}
+    <li>
+      <div class="collapsible-header">{{ potion.name }}</div>
+      <div class="collapsible-body">
         {{ potion.ingredients }}<br>
         {{ potion.effect }}<br>
         {{ potion.toxicity }}<br>
+      </div>
+    </li>
     {% endfor %}
+  </ul>
 
 {% endblock %}

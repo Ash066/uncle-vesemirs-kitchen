@@ -1,4 +1,7 @@
-/* jQuery clip taken for materializecss.com for use with navbar component */
+/* jQuery clip taken for materializecss.com */
 $(document).ready(function () {
+    /* Navbar response*/
     $(".sidenav").sidenav({edge: "right"});
+    /* Collapse element utilised in displaying content */
+    $(".collapsible").collapsible();
 });

@@ -1,11 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for bomb in bombs %}
-        {{ bomb.name }}<br>
+   <ul class="collapsible">
+       {% for bomb in bombs %}
+    <li>
+      <div class="collapsible-header">{{ bomb.name }}</div>
+      <div class="collapsible-body">
         {{ bomb.ingredients }}<br>
         {{ bomb.effect }}<br>
         {{ bomb.charges }}<br>
+      </div>
+    </li>
     {% endfor %}
+  </ul>
 
 {% endblock %}

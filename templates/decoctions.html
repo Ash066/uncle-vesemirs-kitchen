@@ -1,11 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for decoction in decoctions %}
-        {{ decoction.name }}<br>
+   <ul class="collapsible">
+       {% for decoction in decoctions %}
+    <li>
+      <div class="collapsible-header">{{ decoction.name }}</div>
+      <div class="collapsible-body">
         {{ decoction.ingredients }}<br>
         {{ decoction.effect }}<br>
         {{ decoction.duration }}<br>
+      </div>
+    </li>
     {% endfor %}
+  </ul>
 
 {% endblock %}
