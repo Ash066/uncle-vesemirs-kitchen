@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
         integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='static/css/style.css') }}" type="text/css">
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
     {% block styles %}
     {% endblock %}
     <title>Uncle Vesemirs Kitchen</title>
@@ -15,23 +15,23 @@
 
 	<header>
         <!-- top navbar -->
-		<nav class="nav-extended grey darken-2">
+		<nav class="nav-extended black">
 			<div class="nav-wrapper">
-				<a href="{{ url_for('get_landing') }}" class="brand-logo">Uncle Vesemirs Kitchen</a>
+				<a href="{{ url_for('get_landing') }}" class="brand-logo nav-name">Uncle Vesemirs Kitchen</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
 				<ul class="right hide-on-med-and-down">
-					<li><a href="{{ url_for('get_landing') }}">Home</a></li>
-					<li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
-					<li><a href="{{ url_for('get_potions') }}">Potions</a></li>
-					<li><a href="{{ url_for('get_blade_oils') }}">Blade Oils</a></li>
-                    <li><a href="{{ url_for('get_bombs') }}">Bombs</a></li>
-                    <li><a href="{{ url_for('get_decoctions') }}">Decoctions</a></li>
+					<li><a class="nav-link" href="{{ url_for('get_landing') }}">Home</a></li>
+					<li><a class="nav-link" href="{{ url_for('get_recipes') }}">Recipes</a></li>
+					<li><a class="nav-link" href="{{ url_for('get_potions') }}">Potions</a></li>
+					<li><a class="nav-link" href="{{ url_for('get_blade_oils') }}">Blade Oils</a></li>
+                    <li><a class="nav-link" href="{{ url_for('get_bombs') }}">Bombs</a></li>
+                    <li><a class="nav-link" href="{{ url_for('get_decoctions') }}">Decoctions</a></li>
                     {% if session.user %}
-                        <li><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
-                        <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                        <li><a class="nav-link" href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
+                        <li><a class="nav-link" href="{{ url_for('logout') }}">Log Out</a></li>
                     {% else %}
-                        <li><a href="{{ url_for('login') }}">Log In</a></li>
-                        <li><a href="{{ url_for('register') }}">Register</a></li>
+                        <li><a class="nav-link" href="{{ url_for('login') }}">Log In</a></li>
+                        <li><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
                     {% endif %}
 				</ul>
 			</div>
@@ -40,18 +40,18 @@
         <!-- mobile sidenav -->
 		<ul class="sidenav" id="mobile-demo">
             <li><h4 class="center-align">Uncle Vesemirs Kitchen</h4></li>
-            <li><a href="{{ url_for('get_landing') }}">Home</a></li>
-            <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
-            <li><a href="{{ url_for('get_potions') }}">Potions</a></li>
-            <li><a href="{{ url_for('get_blade_oils') }}">Blade Oils</a></li>
-            <li><a href="{{ url_for('get_bombs') }}">Bombs</a></li>
-            <li><a href="{{ url_for('get_decoctions') }}">Decoctions</a></li>
+            <li><a class="nav-link" href="{{ url_for('get_landing') }}">Home</a></li>
+            <li><a class="nav-link" href="{{ url_for('get_recipes') }}">Recipes</a></li>
+            <li><a class="nav-link" href="{{ url_for('get_potions') }}">Potions</a></li>
+            <li><a class="nav-link" href="{{ url_for('get_blade_oils') }}">Blade Oils</a></li>
+            <li><a class="nav-link" href="{{ url_for('get_bombs') }}">Bombs</a></li>
+            <li><a class="nav-link" href="{{ url_for('get_decoctions') }}">Decoctions</a></li>
             {% if session.user %}
-                <li><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
-                <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                <li><a class="nav-link" href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
+                <li><a class="nav-link" href="{{ url_for('logout') }}">Log Out</a></li>
             {% else %}
-                <li><a href="{{ url_for('login') }}">Log In</a></li>
-                <li><a href="{{ url_for('register') }}">Register</a></li>
+                <li><a class="nav-link" href="{{ url_for('login') }}">Log In</a></li>
+                <li><a class="nav-link" href="{{ url_for('register') }}">Register</a></li>
             {% endif %}
 		</ul>
 	</header>

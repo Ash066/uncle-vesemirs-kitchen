@@ -1,7 +1,29 @@
-body, html {
-  background-image: url("img/background.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/* General styling */
+
+html body {
+    background-color: #000e03;
+    font-family: 'Kaushan Script', cursive, sans-serif;
+    font-size: x-large;
+}
+
+.flashes h4 {
+    line-height: 2;
+}
+
+
+
+
+/* Navbar styling */
+
+.nav-name {
+	font-family: 'Kaushan Script', cursive, sans-serif;
+	font-size: xx-large;
+}
+
+.nav-link {
+	font-family: 'Kaushan Script', cursive, sans-serif;
+	margin: 0px 30px;
+	font-size: x-large;
 }
