@@ -6,19 +6,12 @@
     <li>
       <div class="collapsible-header">{{ blade_oil.name }}</div>
       <div class="collapsible-body">
-        {{ blade_oil.ingredients }}<br>
-        {{ blade_oil.effect }}<br>
-        {{ blade_oil.charges }}<br>
+        <p>Charges: {{ blade_oil.charges }}</p>
+        <p>Ingredients: <br> {{ blade_oil.ingredients }}</p>
+        <p>Effect: <br>{{ blade_oil.effect }}</p> 
       </div>
     </li>
     {% endfor %}
   </ul>
 
 {% endblock %}
-
-
-
-
-
-
-

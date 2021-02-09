@@ -6,9 +6,9 @@
     <li>
       <div class="collapsible-header">{{ potion.name }}</div>
       <div class="collapsible-body">
-        {{ potion.ingredients }}<br>
-        {{ potion.effect }}<br>
-        {{ potion.toxicity }}<br>
+        <p>Toxicity: {{ potion.toxicity }}</p>
+        <p>Ingredients: <br> {{ potion.ingredients }}</p>
+        <p>Effect: <br> {{ potion.effect }}</p> 
       </div>
     </li>
     {% endfor %}

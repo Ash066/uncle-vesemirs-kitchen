@@ -6,9 +6,9 @@
     <li>
       <div class="collapsible-header">{{ bomb.name }}</div>
       <div class="collapsible-body">
-        {{ bomb.ingredients }}<br>
-        {{ bomb.effect }}<br>
-        {{ bomb.charges }}<br>
+        <p>Charges: {{ bomb.charges }}</p>
+        <p>Ingredients: <br> {{ bomb.ingredients }}</p>
+        <p>Effect: <br>{{ bomb.effect }}</p>
       </div>
     </li>
     {% endfor %}
