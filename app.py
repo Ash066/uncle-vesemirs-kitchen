@@ -19,6 +19,7 @@ mongo = PyMongo(app)
 
 
 # Functions passing the database category documents to site
+@app.route("/")
 @app.route("/get_landing")
 def get_landing():
     return render_template("index.html")
@@ -48,7 +49,6 @@ def get_decoctions():
     return render_template("decoctions.html", decoctions=decoctions)
 
 
-@app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
     recipes = mongo.db.recipes.find()
@@ -115,6 +115,7 @@ def logout():
     return redirect(url_for("login"))
 
 
+# Add recipe function
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
@@ -133,7 +134,7 @@ def add_recipe():
 
     return render_template("add_recipe.html")
 
-
+# Edit recipe function
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
     if request.method == "POST":
@@ -152,7 +153,7 @@ def edit_recipe(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("edit_recipe.html", recipe=recipe)
 
-
+# Delete recipe function
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})

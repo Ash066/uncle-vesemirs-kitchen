@@ -57,7 +57,8 @@ Monster Glossary so that site users have access to more information a
 * jQuery
 * MongoDB
 * All wireframes were created using the [balsamiq](https://balsamiq.com/) wireframes software.
-* Navbar and collapsible components taken from [materializecss](https://materializecss.com/).
+* Navbar component taken from [bootstrap](https://getbootstrap.com/).
+* Collapsible component taken from [MaterializeCSS](https://materializecss.com/collapsible.html).
 * [cdnjs](https://cdnjs.com/) used to insure proper links used.
 * [EmailJS](https://www.emailjs.com/) used for passing information sumbitted via form in music.html to specified email address. 
 * [FreeFormatter](https://www.freeformatter.com/) used for formatting all code.

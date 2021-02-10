@@ -8,22 +8,39 @@ html body {
     font-size: x-large;
 }
 
-.flashes h4 {
-    line-height: 2;
-}
-
-
-
-
 /* Navbar styling */
+
+.headstyle{
+    background-color: black;
+    color: #C1A87D;
+    padding-bottom: 10px;
+}
 
 .nav-name {
 	font-family: 'Kaushan Script', cursive, sans-serif;
-	font-size: xx-large;
+    font-size: xx-large;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-name:hover{
+    text-decoration: none;
+    color:#000e03;;
 }
 
 .nav-link {
 	font-family: 'Kaushan Script', cursive, sans-serif;
 	margin: 0px 30px;
-	font-size: x-large;
+    font-size: x-large;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    color: #000e03;
+}
+
+.navbar-toggler{
+    color: inherit;
 }
