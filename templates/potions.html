@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<br>
+{% for potion in potions %}
+    <div class="container-fluid">
+        <button type="button" class="collapsible" id="button-position"><h4>{{ potion.name }}</h4></button>
+        <div class="content">
+            <p>Toxicity: {{ potion.toxicity }}</p>
+            <p>Ingredients: <br> {{ potion.ingredients }}</p>
+            <p>Effect: <br> {{ potion.effect }}</p> 
+        </div>
+    </div>
+<br>
+{% endfor %}
+
+{% endblock %}

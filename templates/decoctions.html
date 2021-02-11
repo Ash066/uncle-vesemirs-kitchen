@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<br>
+{% for decoction in decoctions %}
+    <div class="container-fluid">
+        <button type="button" class="collapsible" id="button-position"><h4>{{ decoction.name }}</h4></button>
+        <div class="content">
+            <p>Duration: {{ decoction.duration }}</p>
+            <p>Ingredients: <br> {{ decoction.ingredients }}</p>
+            <p>Effect: <br> {{ decoction.effect }}</p>
+        </div>
+    </div>
+<br>
+{% endfor %}
+
+{% endblock %}

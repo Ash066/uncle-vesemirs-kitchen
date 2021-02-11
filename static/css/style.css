@@ -8,6 +8,7 @@ html body {
     font-size: x-large;
 }
 
+
 /* Navbar styling */
 
 .headstyle{
@@ -43,4 +44,33 @@ html body {
 
 .navbar-toggler{
     color: inherit;
+}
+
+/* Information Card Styling */
+
+.collapsible {
+  background-color: #C1A87D;
+  color: black;
+  padding: 18px;
+  outline: none;
+  font-size: xx-large;
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+    background-color: #C1A87D;
+	text-align: center;
+    font-family: 'Kaushan Script', cursive, sans-serif;
+    margin-left: 20%;
+	margin-right: 20%;
+	width: 60%;
+	padding-bottom: 18px;
+}
+
+#button-position {
+	margin-left: 20%;
+	margin-right: 20%;
+	width: 60%;
+	padding-bottom: 25px;
 }

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+<br>
+{% for recipe in recipes %}
+    <div class="container-fluid">
+        <button type="button" class="collapsible" id="button-position"><h4>{{ recipe.name }}</h4></button>
+        <div class="content">
+            <p>Time: {{ recipe.time }} hr/hrs</p>
+            <p>Serving: {{ recipe.serving }} portions</p>
+            <p>Difficulty: {{ recipe.difficulty }}</p>
+            <p>Ingredients: <br> {{ (recipe.ingredients)  }}</p>
+            <p>Instructions: <br>{{ (recipe.instructions) }}</p>
+            <p>Created by: {{ recipe.created_by }}</p> 
+        </div>
+    </div>
+<br>
+{% endfor %}
+
+{% endblock %}

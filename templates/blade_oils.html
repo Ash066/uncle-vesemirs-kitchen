@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<br>
+{% for blade_oil in blade_oils %}
+    <div class="container-fluid">
+        <button type="button" class="collapsible" id="button-position"><h4>{{ blade_oil.name }}</h4></button>
+        <div class="content">
+            <p>Charges: {{ blade_oil.charges }}</p>
+            <p>Ingredients: <br> {{ blade_oil.ingredients }}</p>
+            <p>Effect: <br>{{ blade_oil.effect }}</p> 
+        </div>
+    </div>
+<br>
+{% endfor %}
+
+{% endblock %}
