@@ -8,12 +8,11 @@ html body {
     font-size: x-large;
 }
 
-
 /* Navbar styling */
 
 .headstyle{
     background-color: black;
-    color: #C1A87D;
+    color: #98720b;
     padding-bottom: 10px;
 }
 
@@ -26,7 +25,7 @@ html body {
 
 .nav-name:hover{
     text-decoration: none;
-    color:#000e03;;
+    color:#C1A87D;
 }
 
 .nav-link {
@@ -46,31 +45,58 @@ html body {
     color: inherit;
 }
 
-/* Information Card Styling */
+.navbar-toggler:hover{
+    color: #C1A87D;
+}
+
+/* Information Button & Card Styling */
 
 .collapsible {
-  background-color: #C1A87D;
+  background-color:#98720b;
   color: black;
-  padding: 18px;
+  padding: 5px;
   outline: none;
   font-size: xx-large;
+}
+
+.collapsible:hover{
+    color: #C1A87D;
 }
 
 .content {
     display: none;
     overflow: hidden;
-    background-color: #C1A87D;
+    background-color: #98720b;
 	text-align: center;
     font-family: 'Kaushan Script', cursive, sans-serif;
-    margin-left: 20%;
-	margin-right: 20%;
-	width: 60%;
-	padding-bottom: 18px;
+    margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+    padding: 5px;
+    color: black;
 }
 
 #button-position {
-	margin-left: 20%;
-	margin-right: 20%;
-	width: 60%;
-	padding-bottom: 25px;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+}
+
+/*Login & Register Page Styling*/
+
+.card{
+    background-color: #98720b;
+    color: black;
+    width: 60%;
+    margin: 20%;
+    padding-top:20px;
+    text-align: center;
+}
+
+.card button{
+    text-align: center;
+    color: black;
+    width: 60%;
+    margin-left: 20%;
+    background-color: #C1A87D;
 }
