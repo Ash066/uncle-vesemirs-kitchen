@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
-/* General styling */
+/* General Styling */
 
 html body {
     background-color: #000e03;
@@ -8,7 +8,7 @@ html body {
     font-size: x-large;
 }
 
-/* Navbar styling */
+/* Navbar Styling */
 
 .headstyle{
     background-color: black;
@@ -49,14 +49,27 @@ html body {
     color: #C1A87D;
 }
 
+/* Flash Message Styling */
+.flashmsg{
+    background-color: black;
+    border-radius: 5px; 
+    border-style: double;
+    border-color: #98720b;
+    color: #C1A87D;
+    line-height: 2;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+}
+
 /* Information Button & Card Styling */
 
 .collapsible {
-  background-color:#98720b;
-  color: black;
-  padding: 5px;
-  outline: none;
-  font-size: xx-large;
+    background-color:#98720b;
+    color: black;
+    padding: 5px;
+    outline: none;
+    font-size: xx-large;
 }
 
 .collapsible:hover{
@@ -76,10 +89,9 @@ html body {
     color: black;
 }
 
-#button-position {
-	margin-left: 10%;
-	margin-right: 10%;
-	width: 80%;
+#button-position{
+    width: 80%;
+    margin-left: 10%;
 }
 
 /*Login & Register Page Styling*/
@@ -95,8 +107,11 @@ html body {
 
 .card button{
     text-align: center;
-    color: black;
+    color: #98720b;
     width: 60%;
     margin-left: 20%;
-    background-color: #C1A87D;
+    margin-top: 20px;
+    background-color: black;
 }
+
+

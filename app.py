@@ -92,7 +92,7 @@ def login():
             if check_password_hash(
                 existing_user["password"], request.form.get("password")):
                     session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(request.form.get("username")))
+                    flash("Welcome, {}".format(request.form.get("username").capitalize()))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -134,6 +134,7 @@ def add_recipe():
 
     return render_template("add_recipe.html")
 
+
 # Edit recipe function
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
@@ -152,6 +153,7 @@ def edit_recipe(recipe_id):
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("edit_recipe.html", recipe=recipe)
+
 
 # Delete recipe function
 @app.route("/delete_recipe/<recipe_id>")

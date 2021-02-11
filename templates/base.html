@@ -56,9 +56,23 @@
         </div>
         </nav>
 
-        <section class="sides">
-        {% block content %}
-        {% endblock %}
+        <!-- Flash Message Section -->
+        <section>
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="row flashes">
+                            <h4 class="flashmsg">{{ message }}</h4>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </section>
+
+        <!-- Main Content Section-->
+        <section>
+            {% block content %}
+            {% endblock %}
         </section>
 	
 		<!-- Javascript import for bootstrap elements -->

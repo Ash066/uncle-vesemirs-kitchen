@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container card">
+
+        <form method="POST" action="{{ url_for('add_recipe') }}">
+            <div class="row">
+
+                <div class="input-field col-sm-12">
+                    <label for="name">Recipe Title</label><br>
+                    <input id="name" name="name" minlength="5" maxlength="50"
+                        type="text" required>
+                </div>
+
+                <div class="input-field col-sm-12">
+                    <label for="time">Time(in hours)</label><br>
+                    <input id="time" name="time" minlength="1" maxlength="3"
+                        type="number" required>
+                </div>
+
+                <div class="input-field col-sm-12">
+                    <label for="serving">Number Of Servings</label><br>
+                    <input id="serving" name="serving" minlength="1" maxlength="3"
+                        type="number" required>
+                </div>
+
+                <div class="input-field col-sm-12">
+                    <label for="difficulty">Difficulty</label><br>
+                    <input id="difficulty" name="difficulty" minlength="4" maxlength="10"
+                        type="text" required>
+                </div>
+
+                <div class="input-field col-sm-12">
+                    <label for="ingredients">Ingredients</label><br>
+                    <input id="ingredients" name="name"
+                        type="text" required>
+                </div>
+
+                <div class="input-field col-sm-12">
+                    <label for="instructions">Instructions</label><br>
+                    <input id="instructions" name="instructions"
+                        type="text" required>
+                </div>
+            
+                <button type="submit" class="btn btn-lg">Submit</button>
+
+            </div>
+
+        </form>
+<br>
+</div>
+
+
+{% endblock %}
