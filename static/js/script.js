@@ -13,3 +13,22 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+/* Javacript providing functionality to emailjs component */
+
+function sendMail(contactForm) {
+	emailjs.send("witcherMail", "mailWitcher", {
+			"from_name": contactForm.name.value,
+			"from_email": contactForm.emailaddress.value,
+			"message": contactForm.message.value
+		})
+		.then(
+			function (response) {
+				window.alert("Message Sent");
+			},
+			function (error) {
+				window.alert("Message Failed To Send");
+			}
+		);
+	return false; // To block from loading a new page
+}

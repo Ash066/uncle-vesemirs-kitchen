@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!--Emailjs to message artist-->
+		<section class="container-fluid cardspacing ">
+			<div class="row card">
+				<div class="col title-name">
+					<h2 class="form-text">Contact Uncle Vesemir</h2>
+				</div>
+				<br>
+				<div class="form-layout text-center">
+					<form onsubmit="return sendMail(this);">
+						<input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+						<br>
+						<input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
+							required />
+						<br>
+						<textarea rows="5" name="message" class="form-control" id="message" placeholder="Message"
+							required></textarea>
+						<br>
+						<button type="submit" class="btn btn-lg">Send Message</button>
+					</form>
+				</div>
+			</div>
+        </section>
+        
+{% endblock %}

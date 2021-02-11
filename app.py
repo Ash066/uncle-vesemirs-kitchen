@@ -18,13 +18,19 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-# Functions passing the database category documents to site
+# Functions rendering templates on pages not interacting with database
 @app.route("/")
 @app.route("/get_landing")
 def get_landing():
     return render_template("index.html")
 
 
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+
+# Functions passing the database category documents to site
 @app.route("/get_potions")
 def get_potions():
     potions = mongo.db.potions.find()
@@ -73,7 +79,7 @@ def register():
         }
         mongo.db.users.insert_one(register)
 
-        # put the new user into 'session' cookie
+        # putting the new user into session cookie
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
     return render_template("register.html")
