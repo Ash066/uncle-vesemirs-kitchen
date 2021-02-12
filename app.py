@@ -159,7 +159,7 @@ def edit_recipe(recipe_id):
         flash("Recipe Successfully Updated")
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    return render_template("edit_recipe.html", recipe=recipe)
+    return render_template("recipes.html", recipe=recipe)
 
 
 # Delete recipe function

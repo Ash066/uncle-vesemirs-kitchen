@@ -22,7 +22,7 @@
             <span><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="{{ url_for('get_landing') }}">Home <span class="sr-only"></span></a>
                 </li>
@@ -80,12 +80,10 @@
     </section>
 
     <footer>
-        <ul class="mx-auto">
-            <li><a class="nav-item" target="_blank" href="{{ url_for('contact') }}"><i
-                        class="fas fa-envelope" aria-hidden="true"> Contact Uncle Vesemir</i>
-                    <span class="sr-only">Contact Uncle Vesemir</span></a>
-            </li>
-        </ul>
+        <a class="nav-item" target="_blank" href="{{ url_for('contact') }}"><i class="fas fa-envelope"
+            aria-hidden="true"> Contact Uncle Vesemir</i>
+                <span class="sr-only">Contact Uncle Vesemir</span></a>
+         
     </footer>
 
     <!-- Javascript import for bootstrap elements -->

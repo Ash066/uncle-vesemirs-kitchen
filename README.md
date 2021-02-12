@@ -56,6 +56,7 @@ Monster Glossary so that site users have access to more information a
 * Python
 * jQuery
 * MongoDB
+* Database diagram created using [dbdiagram](https://dbdiagram.io/).
 * All wireframes were created using the [balsamiq](https://balsamiq.com/) wireframes software.
 * Navbar component taken from [bootstrap](https://getbootstrap.com/).
 * Collapse component javascript taken from [w3schools](https://www.w3schools.com/howto/howto_js_collapsible.asp).
@@ -147,6 +148,8 @@ Cloning process adapted from official [Github](https://docs.github.com/en/f
 3. Click Open with GitHub Desktop button to clone and open the repository with GitHub Desktop.
 4. Follow the prompts in GitHub Desktop to complete the clone.
 
+### To create an EmailJS element: 
+
 ## Credits
 
 ### Content
@@ -155,6 +158,14 @@ Cloning process adapted from official [Github](https://docs.github.com/en/f
 
 
 #### The following images were used in creation of this site:
+
+* background-image-1:https://images6.alphacoders.com/714/714144.jpg
+* background-image-2:https://images6.alphacoders.com/714/714140.jpg
+* background-image-3:https://i.imgur.com/UNl8V3Y.jpg
+* background-image-4:https://wallpaperboat.com/wp-content/uploads/2019/04/the-witcher-3-003-920x518.jpg
+* background-image-5:https://www.hdwallpapers.in/download/the_witcher_4k_hd-3840x2160.jpg
+* background-image-6:https://free4kwallpapers.com/uploads/originals/2015/12/28/the-witcher-3-wild-hunt-the-succubus-wallpaper.jpg
+
 
 
 ### Acknoledgements

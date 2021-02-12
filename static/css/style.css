@@ -8,6 +8,34 @@ html body {
     font-size: x-large;
 }
 
+.welcome{
+    font-family: 'Kaushan Script', cursive, sans-serif;
+    text-align: center;
+    color: #98720b;
+    background-color: black;
+    border-radius: 5px; 
+    border-style: double;
+    border-color: #98720b;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+/* Hyperlink Styling */
+#hyper{
+    text-emphasis: none;
+    text-decoration: none;
+    color: #98720b;
+    font-family: 'Kaushan Script', cursive, sans-serif;
+}
+
+#hyper:hover{
+    text-emphasis: none;
+    text-decoration: none;
+    color: #C1A87D;
+    font-family: 'Kaushan Script', cursive, sans-serif;
+}
+
 /* Navbar Styling */
 
 .headstyle{
@@ -38,7 +66,7 @@ html body {
 
 .nav-link:hover{
     text-decoration: none;
-    color: #000e03;
+    color: #C1A87D;
 }
 
 .navbar-toggler{
@@ -60,6 +88,20 @@ html body {
     width: 60%;
     margin-left: 20%;
     text-align: center;
+}
+
+/* Home Gallery styling*/
+
+#carouselBandImages {
+	height: 770px;
+	margin-top: 15px;
+    margin-bottom: 5%;
+    z-index: 0;
+}
+
+#carouselBandImages img {
+	width: 90%;
+	height: 770px;
 }
 
 /* Information Button & Card Styling */
@@ -100,7 +142,7 @@ html body {
     background-color: #98720b;
     color: black;
     width: 60%;
-    margin: 20%;
+    margin-left: 20%;
     padding-top:20px;
     text-align: center;
 }
@@ -116,6 +158,7 @@ html body {
 
 /* Footer Styling */
 footer i{
+    font-family:'Kaushan Script', cursive, sans-serif;
 	position: fixed;
 	left: 0;
 	bottom: 0;
@@ -143,7 +186,8 @@ footer i{
 	margin-right: 20%;
 	margin-left: 20%;
 	padding-bottom: 5%;
-	line-height: 10px;
+    line-height: 10px;
+    margin-top: 0;
 }
 
 .form-layout button{
