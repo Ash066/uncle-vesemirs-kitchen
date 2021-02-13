@@ -128,7 +128,7 @@ def logout():
 def add_recipe():
     if request.method == "POST":
 
-        # checking if username already exists in db
+        # checking if recipe name already exists in db
         existing_recipe = mongo.db.recipes.find_one(
             {"name": request.form.get("name").capitalize()})
 
