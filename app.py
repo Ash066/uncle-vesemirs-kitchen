@@ -100,6 +100,7 @@ def login():
                 session["user"] = request.form.get("username").lower()
                 flash("Welcome, {}".format(
                     request.form.get("username").capitalize()))
+                return redirect(url_for("get_landing"))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")
@@ -119,13 +120,22 @@ def logout():
     # remove user from session cookie
     flash("You have been logged out")
     session.pop("user")
-    return redirect(url_for("login"))
+    return redirect(url_for("get_landing"))
 
 
 # Add recipe function
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
+
+        # checking if username already exists in db
+        existing_recipe = mongo.db.recipes.find_one(
+            {"name": request.form.get("name").capitalize()})
+
+        if existing_recipe:
+            flash("Recipe already exists! Try another title.")
+            return redirect(url_for("add_recipe"))
+
         recipe = {
             "name": request.form.get("name"),
             "time": request.form.get("time"),
@@ -157,9 +167,10 @@ def edit_recipe(recipe_id):
         }
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
         flash("Recipe Successfully Updated")
+        return redirect(url_for("get_recipes"))
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
-    return render_template("recipes.html", recipe=recipe)
+    return render_template("edit_recipe.html", recipe=recipe)
 
 
 # Delete recipe function

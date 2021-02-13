@@ -22,17 +22,31 @@ html body {
 }
 
 /* Hyperlink Styling */
-#hyper{
+#hyper-gold{
     text-emphasis: none;
     text-decoration: none;
     color: #98720b;
     font-family: 'Kaushan Script', cursive, sans-serif;
 }
 
-#hyper:hover{
+#hyper-gold:hover{
     text-emphasis: none;
     text-decoration: none;
     color: #C1A87D;
+    font-family: 'Kaushan Script', cursive, sans-serif;
+}
+
+.hyper-black{
+    text-emphasis: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Kaushan Script', cursive, sans-serif;
+}
+
+.hyper-black:hover{
+    text-emphasis: none;
+    text-decoration: none;
+    color: #000e03;
     font-family: 'Kaushan Script', cursive, sans-serif;
 }
 
