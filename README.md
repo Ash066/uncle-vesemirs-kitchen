@@ -159,6 +159,8 @@ Monster Glossary so that site users have access to more information a
 
 ## Testing
 
+I have been very fortunate during the duration of the project the only issues that arose were software issues with the gitpod environment and that these issues were resolved by gitpod promptly.
+
 ### User Stories Testing
 
 #### User Story 1 - The Witcher Book Collection Fan
@@ -234,11 +236,10 @@ All html pages were validated with errors relating to jinja templating disregard
 * recipes.html validated by [MarkUpValidationService](https://validator.w3.org/)
 * resister.html validated by [MarkUpValidationService](https://validator.w3.org/)
 
-
 ## Deployment
 
 This project was deployed to Heroku by connecting the repository with an app on Heroku. This is a simple process which is best explained with visual aids.
-Please visit the official Heroku documentation [here](https://devcenter.heroku.com/articles/github-integration) for an indepth set by step instruction on how to do this, visual aids included.
+Please visit the official Heroku documentation [here](https://devcenter.heroku.com/articles/github-integration) for an indepth step by step instruction on how to do this, visual aids included.
 
 ## Cloning
 Cloning process adapted from official [Github](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) documentation.
@@ -291,7 +292,6 @@ Here is where we need our service id and template id.
 
 ## Media
 
-
 #### The following images were used in creation of this site:
 
 * background-image-1:https://images6.alphacoders.com/714/714144.jpg
@@ -300,8 +300,6 @@ Here is where we need our service id and template id.
 * background-image-4:https://wallpaperboat.com/wp-content/uploads/2019/04/the-witcher-3-003-920x518.jpg
 * background-image-5:https://www.hdwallpapers.in/download/the_witcher_4k_hd-3840x2160.jpg
 * background-image-6:https://free4kwallpapers.com/uploads/originals/2015/12/28/the-witcher-3-wild-hunt-the-succubus-wallpaper.jpg
-
-
 
 ### Acknoledgements
 
