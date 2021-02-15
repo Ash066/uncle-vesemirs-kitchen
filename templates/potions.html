@@ -7,7 +7,7 @@
 {% for potion in potions %}
 <div class="container-fluid">
     <button type="button" class="collapsible" id="button-position">
-        <h4>{{ potion.name }}</h4>
+        {{ potion.name }}
     </button>
     <div class="content">
         <p>Toxicity: {{ potion.toxicity }}</p>

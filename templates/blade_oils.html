@@ -7,7 +7,7 @@
 {% for blade_oil in blade_oils %}
 <div class="container-fluid">
     <button type="button" class="collapsible" id="button-position">
-        <h4>{{ blade_oil.name }}</h4>
+        {{ blade_oil.name }}
     </button>
     <div class="content">
         <p>Charges: {{ blade_oil.charges }}</p>

@@ -7,7 +7,7 @@
 {% for bomb in bombs %}
 <div class="container-fluid">
     <button type="button" class="collapsible" id="button-position">
-        <h4>{{ bomb.name }}</h4>
+        {{ bomb.name }}
     </button>
     <div class="content">
         <p>Charges: {{ bomb.charges }}</p>

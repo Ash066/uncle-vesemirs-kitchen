@@ -216,6 +216,23 @@ Labled link in footer placed in base template to appear on all pages. When click
 ![example contact form](testing/user6-form.jpg)
 
 ### Validating
+* style.css validated by [Jigsaw-MarkUpValidationService](https://jigsaw.w3.org/css-validator/)
+* script.js validated by [JSHint](https://jshint.com/)
+#### HTML Validating
+All html pages were validated with errors relating to jinja templating disregarded.
+
+* add_recipe.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* base.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* blade_oils.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* bombs.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* contact.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* decoctions.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* edit_recipe.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* index.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* login.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* potions.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* recipes.html validated by [MarkUpValidationService](https://validator.w3.org/)
+* resister.html validated by [MarkUpValidationService](https://validator.w3.org/)
 
 
 ## Deployment

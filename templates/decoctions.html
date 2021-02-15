@@ -7,7 +7,7 @@
 {% for decoction in decoctions %}
 <div class="container-fluid">
     <button type="button" class="collapsible" id="button-position">
-        <h4>{{ decoction.name }}</h4>
+        {{ decoction.name }}
     </button>
     <div class="content">
         <p>Duration: {{ decoction.duration }}</p>
