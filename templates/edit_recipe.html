@@ -17,13 +17,13 @@
             <div class="input-field col-sm-12">
                 <label for="time">Time(in hours)</label><br>
                 <input id="time" name="time" type="number" value=" {{recipe.time}} "
-                    required>
+                    min="0" required>
             </div>
 
             <div class="input-field col-sm-12">
                 <label for="serving">Number Of Servings</label><br>
                 <input id="serving" name="serving" type="number"
-                    value=" {{recipe.serving}} " required>
+                    value=" {{recipe.serving}} " min="0" required>
             </div>
 
             <div class="input-field col-sm-12">
