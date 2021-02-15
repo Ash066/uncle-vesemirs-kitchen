@@ -5,14 +5,16 @@
 
 <br>
 {% for bomb in bombs %}
-    <div class="container-fluid">
-        <button type="button" class="collapsible" id="button-position"><h4>{{ bomb.name }}</h4></button>
-        <div class="content">
-            <p>Charges: {{ bomb.charges }}</p>
-            <p>Ingredients: <br> {{ bomb.ingredients }}</p>
-            <p>Effect: <br>{{ bomb.effect }}</p>
-        </div>
+<div class="container-fluid">
+    <button type="button" class="collapsible" id="button-position">
+        <h4>{{ bomb.name }}</h4>
+    </button>
+    <div class="content">
+        <p>Charges: {{ bomb.charges }}</p>
+        <p>Ingredients: <br> {{ bomb.ingredients }}</p>
+        <p>Effect: <br>{{ bomb.effect }}</p>
     </div>
+</div>
 <br>
 {% endfor %}
 
