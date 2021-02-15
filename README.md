@@ -5,20 +5,66 @@ The goal of this site is to provide fans of The Witcher universe wi
 ## UX
 
 ### Design
+
 Website design was initially planned using the following wireframes which I created using the Balsamiq software:
  
 #### Desktop
+
+* ![Desktop - Home](wireframes/desktop-wireframe-home.jpg).
+* ![Desktop - Recipes](wireframes/desktop-wireframe-recipe.jpg).
+* ![Desktop - Add Recipe](wireframes/desktop-wireframe-addrecipe.jpg).
+* ![Desktop - Edit Recipe](wireframes/desktop-wireframe-editrecipe.jpg).
+* ![Desktop - Potions](wireframes/desktop-wireframe-potions.jpg).
+* ![Desktop - Blade Oils](wireframes/desktop-wireframe-bladeoils.jpg).
+* ![Desktop - Decoctions](wireframes/desktop-wireframe-decoctions.jpg).
+* ![Desktop - Bombs](wireframes/desktop-wireframe-bombs.jpg).
+* ![Desktop - Log In](wireframes/desktop-wireframe-login.jpg).
+* ![Desktop - Register](wireframes/desktop-wireframe-register.jpg).
+* ![Desktop - Contact](wireframes/desktop-wireframe-contact.jpg).
  
 
 #### Tablet
+
+* ![Tablet - Home](wireframes/tablet-wireframe-home.jpg).
+* ![Tablet - Recipes](wireframes/tablet-wireframe-recipe.jpg).
+* ![Tablet - Add Recipe](wireframes/tablet-wireframe-addrecipe.jpg).
+* ![Tablet - Edit Recipe](wireframes/tablet-wireframe-editrecipe.jpg).
+* ![Tablet - Potions](wireframes/tablet-wireframe-potions.jpg).
+* ![Tablet - Blade Oils](wireframes/tablet-wireframe-bladeoils.jpg).
+* ![Tablet - Decoctions](wireframes/tablet-wireframe-decoctions.jpg).
+* ![Tablet - Bombs](wireframes/tablet-wireframe-bombs.jpg).
+* ![Tablet - Log In](wireframes/tablet-wireframe-login.jpg).
+* ![Tablet - Register](wireframes/tablet-wireframe-register.jpg).
+* ![Tablet - Contact](wireframes/tablet-wireframe-contact.jpg).
  
 
 #### Mobile
+
+* ![Mobile - Home](wireframes/mobile-wireframe-home.jpg).
+* ![Mobile - Recipes](wireframes/mobile-wireframe-recipes.jpg).
+* ![Mobile - Add Recipe](wireframes/mobile-wireframe-addrecipe.jpg).
+* ![Mobile - Edit Recipe](wireframes/mobile-wireframe-editrecipe.jpg).
+* ![Mobile - Potions](wireframes/mobile-wireframe-potions.jpg).
+* ![Mobile - Blade Oils](wireframes/mobile-wireframe-bladeoils.jpg).
+* ![Mobile - Decoctions](wireframes/mobile-wireframe-decoctions.jpg).
+* ![Mobile - Bombs](wireframes/mobile-wireframe-bombs.jpg).
+* ![Mobile - Log In](wireframes/mobile-wireframe-login.jpg).
+* ![Mobile - Register](wireframes/mobile-wireframe-register.jpg).
+* ![Mobile - Contact](wireframes/mobile-wireframe-contact.jpg).
+
+#### Database Diagram
+
+* ![Database Diagram](wireframes/dbdiagram.jpg).
  
 
 Wireframes available as pdf here:
 
-*
+* [Desktop](wireframes/desktop-wireframes.pdf).
+* [Talbet](wireframes/tablet-wireframes.pdf).
+* [Mobile](wireframes/mobile-wireframes.pdf).
+
+Database Diagram available as pdf here:
+* [Database Diagram](wireframes/DatabaseDiagram.pdf).
 
 ### User Stories
 
@@ -38,13 +84,61 @@ I keep getting all these monster body parts when collecting my trophy
 One, two, maybe three monsters/enemys together I can face alone, but any more than that and I am too swarmed to survive. I need some long distance firepower please!!
 
 #### User 6 - Uncle Vesemir
-I have shared all the knowledge I can recall that the new witcher recruits may need, however even I can admit that at the fine old age of 150years old (I know, I look great for my age, thank you), some things may have slipped my mind. I need a way for these new recruits to contact me to remind me if I have left something out.
-
-#### User 7 - Uncle Vesemir
-I may not be as quick as I was when I was a young man of 100, but you still can't get anything past me! I need to know I can update the information I have provided or add a new section( I am sure I might be missing something important... ), but that only I can do this! Melitele herself would weep should Lambert get such power.
+I have shared all the knowledge I can recall that the new witcher recruits may need, however even I can admit that at the fine old age of 150years old (I know, I look great for my age, thank you), some things may have slipped my mind. 
+I need a way for these new recruits to contact me to remind me if I have left something out.
 
 ## Features
 
+### Base Template
+This website utilises a base template which applies a bootstrap navigation bar which is responsive to screen size and contains links to all available pages.
+It also contains a a navigation bar which displays a link to contact the website owner. This template is applied to all html pages which are displayed to the user, both registered and unknown.
+This helps reduce duplicate code and maintains a consistant look and feel of the site.
+
+### Index/Landing
+This page extends the base template. It also contains a message welcoming the user to the site. 
+Below this is a carousel of illustrations based on The Witcher 3: The Wild Hunt video game (developed by cd projekt red) and The Witcher book series (written by Andrzej Sapkowski), which tie into the colour scheme of the website.
+
+### Recipes
+This page extends the base template. This page displays recipes from the database in sections which are opened by clicking on the labeled button for each individual recipe.
+This page also contains a button link which, if the user is not logged in, informs the user to click to login and leads them to the login page, and if the user is logged in this button informs the user to click to add there own recipe and leads the user to the add recipe page.
+If the user is signed in the recipe details section will contain an edit button and a delete button. The delete button will alert the user and ask them to confirm that they would like to delete the recipe. The edit button directs the user to the edit recipe page.
+
+### Add Recipe
+This page extends the base template. This page is only available to users whom have logged in. The main content of this page is a form in which a user can input details of their own recipe.
+This form passes the information to the database and the new recipe will be displayed on the recipes.html page. This form will not accept recipe names which alread exist within the template and will advise the user of such and the user is redirected back to the recipes page.
+If the form has been sumbitted the user will be displayed a flash message to inform them that the recipe has been added.
+
+### Edit Recipe
+This page extends the base template. This page is accessible to logged in users whom created the recipe by clicking on the edit button within the collapsed container on the users created recipe.
+The user is presented the same form as the add recipe page with the previously entered information populating the input fields. When the user sumbits the form a flash message informs the user that the recipe has been updated and the user is redirected back to the recipes page.
+
+### Potions
+This page extends the base template. This page displays potions from the database in sections which are opened by clicking on the labeled button for each individual potion.
+There is no facility for a user to edit or add to this category as there is a fixed list of these items in the game.
+
+### Blade Oils
+This page extends the base template. This page displays blade oils from the database in sections which are opened by clicking on the labeled button for each individual blade oil.
+There is no facility for a user to edit or add to this category as there is a fixed list of these items in the game.
+
+### Decoctions
+This page extends the base template. This page displays decoctions from the database in sections which are opened by clicking on the labeled button for each individual decoction.
+There is no facility for a user to edit or add to this category as there is a fixed list of these items in the game.
+
+### Bombs
+This page extends the base template. This page displays bombs from the database in sections which are opened by clicking on the labeled button for each individual bomb.
+There is no facility for a user to edit or add to this category as there is a fixed list of these items in the game.
+
+### Login
+This page extends the base template. The main content of this page is a form which the user inputs their username and password. The backend of this form checkes for the username and if the hashed password matches the database entry.
+As a security measure the user is flashed with a message stating the Username or password is incorrect regardless of which input did not match.
+
+### Register
+This page extends the base template. The main content of this page is a form which the user inputs their username and password. The backend of this form checks to ensure no duplicate usernames in the database.
+As a security measure the password is passed and stored hashed by werkzeug so that the password can not be revealed if the database has been compromised.
+
+### Contact
+This page extends the base template. The user is presented with a form which takes a name, email address and message as input fields. All of these fields are required to send the message. 
+This form uses emailjs and the script.js file to function. If the message has been sucessful the browser will prompt the user of such and if it has failed, the browser will prompt the user of such.
 
 ### Features left to implement
 Monster Glossary so that site users have access to more information and a monster they are trying to defeat and what best to use in that situation.
@@ -111,15 +205,6 @@ I have shared all the knowledge I can recall that the new witcher r
 
 ![example](assets/testing/user-5.jpg)
 
-#### User Story 7 - Uncle Vesemir
-##### Objective:
-I may not be as quick as I was when I was a young man of 90 years old, but you still can't get anything past me! I need to know I can update the information I have provided or add a new section( I am sure I might be missing something important... ), but that only I can do this. Melitele herself would weep should Lambert get such power.
-##### Addressed:
-
-![example](assets/testing/user-6-a.jpg)
-![example](assets/testing/user-6-b.jpg)
-
-
 ### Validating
 
 
@@ -150,11 +235,15 @@ Cloning process adapted from official [Github](https://docs.github.com/en/f
 
 ### To create an EmailJS element: 
 
-## Credits
+## Content
 
-### Content
+* All recipes included on the recipes.html page were taken from the official cd projekt red [Witcher kitchen site](http://witcherkitchen.com/recipes/).
+* All of the information on the potions from The Witcher 3: Wild Hunt video game located on potions.html page was taken from the [Witcher Fandom Wiki](https://witcher.fandom.com/wiki/The_Witcher_potions).
+* All of the information on the blade oils from The Witcher 3: Wild Hunt video game located on blade_oils.html page was taken from the [Witcher Fandom Wiki](https://witcher.fandom.com/wiki/The_Witcher_3_oils).
+* All of the information on the bombs from The Witcher 3: Wild Hunt video game located on bombs.html page was taken from the [Witcher Fandom Wiki](https://witcher.fandom.com/wiki/The_Witcher_3_bombs).
+* All of the information on the decoctions from The Witcher 3: Wild Hunt video game located on decoctions.html page was taken from the [Witcher 3 Wiki](https://thewitcher3.wiki.fextralife.com/Decoctions).
 
-### Media
+## Media
 
 
 #### The following images were used in creation of this site:
