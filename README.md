@@ -78,7 +78,7 @@ While trying to complete a quest in game, I keep dying from drowning
 As a fan of the art styling of the video game, I like to explore the vast open world, however a monster in the wild seems to always hunt me down. I need to know what will make my sword more useful in this fight for my life!
 
 #### User 4 - The Witcher 3: Wild Hunt Player
-I keep getting all these monster body parts when collecting my trophy. I need somewhere to tell me what I need to add to these to make the 'decotations' the game informs me can be made from these body parts.
+I keep getting all these monster body parts when collecting my trophy. I need somewhere to tell me what I need to add to these to make the 'decoctions' the game informs me can be made from these body parts.
 
 #### User 5 - The Witcher 3: Wild Hunt Player
 One, two, maybe three monsters/enemys together I can face alone, but any more than that and I am too swarmed to survive. I need some long distance firepower please!!
@@ -156,10 +156,8 @@ Monster Glossary so that site users have access to more information a
 * Collapse component javascript taken from [w3schools](https://www.w3schools.com/howto/howto_js_collapsible.asp).
 * [cdnjs](https://cdnjs.com/) used to insure proper links used.
 * [EmailJS](https://www.emailjs.com/) used for passing information sumbitted via form in music.html to specified email address. 
-* [FreeFormatter](https://www.freeformatter.com/) used for formatting all code.
 
 ## Testing
-
 
 ### User Stories Testing
 
@@ -167,49 +165,63 @@ Monster Glossary so that site users have access to more information a
 ##### Objective:
 I've read all the books and find myself drooling by the end of most chapters! I need to bring the smells and tastes of Novigard to my home (and my belly).
 ##### Addressed:
-
-![example](assets/testing/user-1.jpg)
+As food is something heavily featured in the books, games, and tv series it was placed as the first linked page. The site features buttons listing the available recipes which when clicked expand to give further information such as ingredients and instructions.
+Users also have the option to register or sign in to add their own recipe.
+Includes time needed, servings, difficulty, ingredients and instructions.
+![example collapse closed](testing/user1-collapse.jpg)
+![example collapse open](testing/user1-expand.jpg)
 
 #### User Story 2 - The Witcher 3: Wild Hunt Player 
 ##### Objective:
 While trying to complete a quest in game, I keep dying from drowning! I want to know what potions are available to me so I can pass this quest.
 ##### Addressed:
-
-![example](assets/testing/user-2.jpg)
+Potions are displayed in the same button list, promoting ease of use for the user throught the site. The collapsed sections allow the user quickly go throught the list of potions and only expand on the required section when clicked.
+Includes toxicity, ingredients and effect.
+![example collapse closed](testing/user2-collapse.jpg)
+![example collapse open](testing/user2-expand.jpg)
 
 #### User Story 3 - The Witcher 3: Wild Hunt Player 
 ##### Objective:
 As a fan of the art styling of the video game, I like to explore the vast open world, however a monster in the wild seems to always hunt me down. I need to know what will make my sword more useful in this fight for my life!
 ##### Addressed:
-
-![example](assets/testing/user-3.jpg)
+Blade Oils are displayed in the same button list, promoting ease of use for the user throught the site. The collapsed sections allow the user quickly go throught the list of blade oils and only expand on the required section when clicked.
+Includes charges, ingredients and effect.
+![example collapse closed](testing/user3-collapse.jpg)
+![example collapse open](testing/user3-expand.jpg)
 
 #### User Story 4 - The Witcher 3: Wild Hunt Player 
 ##### Objective:
 I keep getting all these monster body parts when collecting my trophy. I need somewhere to tell me what I need to add to these to make the 'decotations' the game informs me can be made from these body parts.
 ##### Addressed:
-
-![example](assets/testing/user-4.jpg)
+Decoctions are displayed in the same button list, promoting ease of use for the user throught the site. The collapsed sections allow the user quickly go throught the list of decoctions which are named by monster and only expand on the required section.
+Includes duration, ingredients and effect.
+![example collapse closed](testing/user4-collapse.jpg)
+![example collapse open](testing/user4-expand.jpg)
 
 #### User Story 5 - The Witcher 3: Wild Hunt Player 
 ##### Objective:
 One, two, maybe three monsters/enemys together I can face alone, but any more than that and I am too swarmed to survive. I need some long distance firepower please!!
 ##### Addressed:
-
-![example](assets/testing/user-4.jpg)
+Bombs are displayed in the same button list, promoting ease of use for the user throught the site. The collapsed sections allow the user quickly go throught the list of bombs which only expand on the required section when clicked when clicked.
+Includes charges, ingredients and effect.
+![example collapse closed](testing/user5-collapse.jpg)
+![example collapse open](testing/user5-expand.jpg)
 
 #### User Story 6 - Uncle Vesemir
 ##### Objective:
 I have shared all the knowledge I can recall that the new witcher recruits may need, however even I can admit that at the fine old age of 150years old (I know, I look great for my age, thank you), some things may have slipped my mind. I need a way for these new recruits to contact me to remind me if I have left something out.
 ##### Addressed:
-
-![example](assets/testing/user-5.jpg)
+Labled link in footer placed in base template to appear on all pages. When clicked a new window will open with a contact form which uses emailjs to send and email to the site admin.
+![example footer link](testing/user6-footer.jpg)
+![example contact form](testing/user6-form.jpg)
 
 ### Validating
 
 
 ## Deployment
 
+This project was deployed to Heroku by connecting the repository with an app on Heroku. This is a simple process which is best explained with visual aids.
+Please visit the official Heroku documentation [here](https://devcenter.heroku.com/articles/github-integration) for an indepth set by step instruction on how to do this, visual aids included.
 
 ## Cloning
 Cloning process adapted from official [Github](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository) documentation.
@@ -234,6 +246,23 @@ Cloning process adapted from official [Github](https://docs.github.com/en/f
 4. Follow the prompts in GitHub Desktop to complete the clone.
 
 ### To create an EmailJS element: 
+
+1. Visit the [EmailJs](https://www.emailjs.com/) site.
+2. Create an account. A free account is suitable for testing however if you require higher usage view the [pricing](https://www.emailjs.com/pricing/) page to select the most appropriate account for your need.
+3. Navigate to your account dashboard and select the add new service button.
+4. Select required service ie g-mail, outlook,  icloud, etc.
+5. Assign a name and service id, keep a note of your service id as you will need it later.
+6. Click connect account to connect this service with your destination email account.
+7. Navigate again to your account dashboard.
+8. Select the email templates section on the menu on the left hand side of the screen.
+9. On the email template page, select the create new template button.
+10. Navigate to the settings tab of the template and assign a name and template id. Keep a note of your template id as you will also need this later.
+11. Now let's go back to Content tab, where we'll see the subject field, the content editor, and other email fields. Any field can contain dynamic variables, so we can set the value programmatically from our Javascript code!
+12. In the to email section fill in the destination email addresss.
+13. There are optional sections for bcc and cc should you require a copy to be sent alongside the base.
+14. Save your template.
+15. Navigate to the EmailJs [creating a contact form](https://www.emailjs.com/docs/tutorial/creating-contact-form/) page. Here you will find sample html and javascript for placing into your site.
+Here is where we need our service id and template id.
 
 ## Content
 
@@ -261,7 +290,8 @@ Cloning process adapted from official [Github](https://docs.github.com/en/f
 
 #### This project and site could not have been completed without the support of the following people:
 
-* Roman Grubic, my in class co-ordinator whom provided support on a daily basis.
-* Excellence Ilesanmi, my mentor whom provided industry perspective and support via the mentor sessions.
-* Code institute, for providing this opportunity to take part in this course and for the learning supports provided.
-
+* Roman Grubic, my in class co-ordinator whom provided support on a daily basis.
+* Excellence Ilesanmi, my mentor whom provided industry perspective and support via the mentor sessions.
+* Code institute, for providing this opportunity to take part in this course and for the learning supports provided.
+* CD Projekt Red for bring the witcher world to life in the video games and allowing me and many others to live our best Gearlt lives.
+* Andrzej Sapkowski for creating an amazing book series and fantastical world.
